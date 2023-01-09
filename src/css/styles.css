@@ -10,9 +10,9 @@
 }
 
 :root {
-  --main-color: #033a80;
-  --bg-color: #fff;
-  --text-color: #0f0c27;
+  --main-color: hsl(214, 95%, 26%);
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: hsl(247, 53%, 10%);
   --hover: hsl(260, 100%, 51%);
   --big-font: 3.2rem;
   --medium-font: 1.8rem;
@@ -77,7 +77,7 @@ body {
   background: var(--bg-color);
   padding: 0.8125rem 10%;
   transition: 0.2;
-  box-shadow: -3px -4px 8px #e7e5e4, 2px 2px 5px #d6d3d1;
+  box-shadow: -3px -4px 8px hsl(20, 6%, 90%), 2px 2px 5px hsl(24, 6%, 83%);
   z-index: 2000;
 }
 
@@ -90,7 +90,7 @@ body {
 .logo > span {
   font-size: 1.6rem;
   font-weight: 600;
-  color: #dc143c;
+  color: hsl(348, 83%, 47%);
 }
 
 .primary-navigation a:link,
@@ -147,6 +147,7 @@ body {
 
 .home-img img {
   width: 100%;
+  border-radius: 0.7rem;
 }
 
 .home-txt span {
@@ -189,10 +190,10 @@ body {
 .btn:visited {
   display: inline-block;
   background: var(--main-color);
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   padding: 0.7rem 1.3rem;
   border: 0.6rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .btn:hover,
@@ -202,8 +203,46 @@ body {
 
 /* About */
 
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: 2rem;
+}
+
+.heading span {
+  font-size: var(--p-font);
+  color: hsl(145, 98%, 33%);
+}
+
 .about-container {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 2rem;
+}
+
+.about-img img {
+  width: 80%;
+  border-radius: 0.7rem;
+}
+
+.about-text {
+  font-size: var(--p-font);
+  font-weight: 400;
+  text-align: justify;
+}
+
+.information {
+  margin: 1rem 0 1.4rem;
+}
+
+.information .info-box {
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.information .info-box span {
+  font-weight: 400;
+  margin-left: 1rem;
 }

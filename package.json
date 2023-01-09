@@ -1,0 +1,15 @@
+{
+  "name": "my-website-v.2",
+  "version": "1.0.0",
+  "description": "My personal website v.2",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "John Aries Saique",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}

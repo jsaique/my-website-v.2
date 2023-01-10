@@ -176,14 +176,18 @@ body {
 }
 
 .social a:link,
-.social a:visited {
+.social a:visited,
+.footer-social a:link,
+.footer-social a:visited {
   margin-bottom: 1rem;
   font-size: 1.375rem;
   color: var(--text-color);
 }
 
 .social a:hover,
-.social a:active {
+.social a:active,
+.footer-social a:hover,
+.footer-social a:active {
   color: var(--hover);
   transition: 0.5s;
 }
@@ -371,4 +375,33 @@ span {
 .projects-box a:hover,
 .projects-box a:active {
   color: #8b8a8f;
+}
+
+/* FOOTER */
+
+.footer {
+  place-items: center;
+  padding: 1.25rem;
+  color: var(--text-color);
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+  color: var(--text-color);
+}
+
+.footer-social a i {
+  color: var(--main-color);
+  font-size: 1.5rem;
+  margin-left: 0.625rem;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.hero {
+  padding: 1.25rem;
+  text-align: center;
+  background: var(--main-color);
+  color: hsl(60, 9%, 98%);
 }

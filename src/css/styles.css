@@ -486,6 +486,7 @@ span {
     position: absolute;
     top: 1.4rem;
     right: 2rem;
+    padding: 1rem;
   }
 
   .scroll-down {

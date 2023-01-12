@@ -123,6 +123,10 @@ header.shadow {
   color: hsl(348, 83%, 47%);
 }
 
+.navbar {
+  --gap: 0.25rem;
+}
+
 .navbar a:link,
 .navbar a:visited {
   font-size: 1rem;
@@ -163,7 +167,7 @@ header.shadow {
   display: grid;
   grid-template-columns: 0.2fr 1fr 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: var(--gap, 1rem);
 }
 
 .home-img {
@@ -232,7 +236,7 @@ header.shadow {
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: var(--gap, 1rem);
   margin-top: 2rem;
 }
 
@@ -338,7 +342,7 @@ span {
 .projects-content {
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
   justify-content: center;
-  gap: 1rem;
+  gap: var(--gap, 1rem);
   margin-top: 2rem;
 }
 
@@ -484,8 +488,8 @@ span {
 
   .darkmode-toggle {
     position: absolute;
-    top: 1.4rem;
-    right: 2rem;
+    top: 0.25rem;
+    right: 1rem;
     padding: 1rem;
   }
 
